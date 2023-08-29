@@ -325,7 +325,7 @@
     \newcommand{\nomekeywords}{Keywords}
     \newcommand{\listalgorithmname}{Lista de Algoritmos}
     \newcommand{\algorithmname}{Algoritmo}
-    \renewcommand{\listfigurename}{Lista de Ilustrações}
+    \renewcommand{\listfigurename}{Lista de Quadros}
     % \renewcommand{\figurename}{Figura}
     \newcommand{\photographname}{Fotografia}
     \newcommand{\graphname}{Gráfico}
@@ -1744,9 +1744,11 @@ Conteúdos elaborados por terceiros, citados e referenciados nesta obra não sã
   \cleardoublepage%% Página de verso
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Lista de ilustrações
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 % \renewcommand{\cftfigurename}{\figurename\space}%% Nome da entrada na lista de objetos flutuantes (figura)
 \renewcommand*{\cftfigureaftersnum}{~~--~~}%% Conteúdo após a entrada na lista de objetos flutuantes (figura)
