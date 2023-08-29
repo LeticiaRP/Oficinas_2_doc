@@ -26,7 +26,7 @@ Nesta seção introdutória, apresentamos o projeto \textit{Sir Galahad}, um rob
 
 Nesta seção, exploramos o contexto que motiva a criação do projeto \textit{Sir Galahad}. A busca por um robô equilibrista de duas rodas, capaz de buscar e atingir um alvo, de forma que este trabalho combine conceitos, como de controle dinâmico, fusão de sensores e integração de sistemas. 
 
-A criação de um robô que equilibra-se sobre duas rodas, de forma análoga a um cavaleiro medieval em seu cavalo, desafia os paradigmas convencionais da mobilidade robótica. Esta iniciativa alinha-se à busca por soluções tecnológicas que, além de atender necessidades práticas, inspiram a exploração dos limites da engenhosidade humana. Neste contexto, a motivação diante da escolha do projeto  \textit{Sir Galahad} é permeada por questões técnicas, científicas e criativas. 
+A criação de um robô que equilibra-se sobre duas rodas, de forma análoga a um pêndulo invertido, desafia os paradigmas convencionais da mobilidade robótica. Esta iniciativa alinha-se à busca por soluções tecnológicas que, além de atender necessidades práticas, inspiram a exploração dos limites da engenhosidade humana. Neste contexto, a motivação diante da escolha do projeto  \textit{Sir Galahad} é permeada por questões técnicas, científicas e criativas. 
 
 Este trabalho se propõe a detalhar o projeto, desde suas premissas até sua concretização. Ao explorar as considerações iniciais que permeiam \textit{Sir Galahad}. 
 
@@ -42,7 +42,7 @@ O objetivo geral deste trabalho é o projeto e implementação de um robô difer
 % 1.3 ----------- justificativa
 \section{\textbf{Justificativa}}
 
-A criação do projeto \textit{Sir Galahad} é motivada pela busca por avanços na robótica e suas aplicações práticas. Ao  desenvolver um equilibrista de duas rodas, podemos explorar o potencial da robótica em situações desafiantes, contribuindo para o conhecimento de controle e sensoriamento. Além disso, ao emular o equilíbrio de um cavaleiro medieval, busca-se estimular a inovação tecnológica.
+A criação do projeto \textit{Sir Galahad} é motivada pela busca por avanços na robótica e suas aplicações práticas. Ao  desenvolver um equilibrista de duas rodas, podemos explorar o potencial da robótica em situações desafiantes, contribuindo para o conhecimento de controle e sensoriamento.
 
 A capacidade do \textit{Sir Galahad} de buscar, identificar e atingir alvos tem implicações práticas em inspeção e monitoramento, além de ser uma expressão da criatividade humana na tecnologia robótica.
 
@@ -81,9 +81,18 @@ Discutiremos aqui as matérias cujos conceitos são de suma importância para o 
 % 1.4 ----------- declaração do escopo de alto nível
 \section{\textbf{Declaração do escopo de alto nível}}
 
+O protótipo criado no projeto consiste em um veículo autônomo que deve detectar um alvo ou objetivo por meio de reconhecimento de imagem e se locomover em direção à ele enquanto se equilibra sobre duas rodas como um pêndulo invertido. 
 
 % 1.4.1 ----------- requisitos funcionais
 \subsection{Requisitos funcionais}
+
+RF1: O robô deve ser capaz de se manter em equilíbrio sobre duas rodas estando parado ou em movimento em uma superfície lisa em um ambiente fechado.
+
+RF2: O robô deve ser capaz de detectar por reconhecimento de imagem uma bola de tênis em um ambiente bem iluminado.
+
+RF3: O veículo deve ser capaz de se locomover em direção ao alvo detectado contanto que o terreno seja regular e não existam obstáculos em seu caminho.
+
+RF4: O robô deve ser capaz de sinalizar que chegou perto ou atingiu o alvo.
 
 
 % 1.4.2 ----------- requisitos não-funcionais
