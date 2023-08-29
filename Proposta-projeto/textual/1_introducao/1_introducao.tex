@@ -86,18 +86,33 @@ O protótipo criado no projeto consiste em um veículo autônomo que deve detect
 % 1.4.1 ----------- requisitos funcionais
 \subsection{Requisitos funcionais}
 
-RF1: O robô deve ser capaz de se manter em equilíbrio sobre duas rodas estando parado ou em movimento em uma superfície lisa em um ambiente fechado.
+RF1: Se manter em equilíbrio sobre duas rodas estando parado ou em movimento em uma superfície plana em um ambiente fechado.
 
-RF2: O robô deve ser capaz de detectar por reconhecimento de imagem uma bola de tênis em um ambiente bem iluminado.
+RF2: Detectar um alvo em um ambiente bem iluminado.
 
-RF3: O veículo deve ser capaz de se locomover em direção ao alvo detectado contanto que o terreno seja regular e não existam obstáculos em seu caminho.
+RF3: Se locomover em direção ao alvo detectado contanto que o terreno seja regular e não existam obstáculos em seu caminho.
 
-RF4: O robô deve ser capaz de sinalizar que chegou perto ou atingiu o alvo.
+RF4: Sinalizar que chegou perto ou atingiu o alvo/objetivo.
 
 
 % 1.4.2 ----------- requisitos não-funcionais
 \subsection{Requisitos não-funcionais}
 
+RNF1: O controle do equilíbrio será feito utilizando dados captados por sensores como acelerômetro e giroscópio.
+
+RNF2: O alvo deve ser detectado utilizando processamento de imagem.
+
+RNF3: Inicialmente o alvo a ser detectado será uma bola de tênis.
+
+RNF4: O controle e processamento de imagem será feito por um Raspberry Pi 4.
+
+RNF5: Os sensores serão controlados por um ESP32.
+
+RNF6: Ao se aproximar ou atingir o alvo, o robô deverá fazer um alerta visual para informar que a operação foi concluída.
+
+RNF7: A linguagem utilizada para controlar o robô será Python.
+
+RNF8: Os dois motores serão acionados por Ponte H que será controlada pelo ESP32.
 
 % 1.5 ----------- materiais e métodos
 \section{\textbf{Materiais e métodos}}
