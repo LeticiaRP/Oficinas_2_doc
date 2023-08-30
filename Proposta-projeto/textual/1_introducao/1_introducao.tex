@@ -19,7 +19,7 @@
 % 1 ------------- introdução
 \chapter{Introdução}\label{cap:introducao}
 
-Nesta seção introdutória, apresentamos o projeto \textit{Sir Galahad}, um robô equilibrista de duas rodas uma ideia que une a robótica e o controle de sistemas dinâmicos. Nosso enfoque reside em desenvolver um robô capaz de manter seu equilíbrio enquanto se movimenta em ambientes diversos. Ao longo deste documento, examinaremos os objetivos, justificativas e escopo do projeto, além de destacar a importância desse tipo de tecnologia na busca por soluções autônomas e versáteis.
+Nesta seção introdutória apresentamos o projeto \textit{Sir Galahad}, um robô equilibrista de duas rodas, uma ideia que une a robótica e o controle de sistemas dinâmicos. Nosso enfoque reside em desenvolver um robô capaz de manter seu equilíbrio enquanto se movimenta em ambientes diversos. Ao longo deste documento, examinaremos os objetivos, justificativas e escopo do projeto, além de destacar a importância desse tipo de tecnologia na busca por soluções autônomas e versáteis.
 
 % 1.1 ----------- considerações iniciais
 \section{\textbf{Considerações iniciais}}
@@ -81,16 +81,17 @@ Discutiremos aqui as matérias cujos conceitos são de suma importância para o 
 % 1.4 ----------- declaração do escopo de alto nível
 \section{\textbf{Declaração do escopo de alto nível}}
 
-O protótipo criado no projeto consiste em um veículo autônomo que deve detectar um alvo ou objetivo por meio de reconhecimento de imagem e se locomover em direção à ele enquanto se equilibra sobre duas rodas como um pêndulo invertido. 
+O protótipo criado no projeto consiste em um veículo autônomo que deve detectar um alvo ou objetivo por meio de reconhecimento de imagem e se locomover em direção à ele enquanto se equilibra sobre duas rodas como um pêndulo invertido.
+Não está dentro do escopo do projeto a navegação em ambientes externos, sobre terrenos não planos ou que possuam quaisquer tipos de obstáculos que possam obstruir a navegação.
 
 % 1.4.1 ----------- requisitos funcionais
 \subsection{Requisitos funcionais}
 
 RF1: Se manter em equilíbrio sobre duas rodas estando parado ou em movimento em uma superfície plana em um ambiente fechado.
 
-RF2: Detectar um alvo em um ambiente bem iluminado.
+RF2: Detectar um alvo de formato, tamanho e cor previamente determinados em um ambiente bem iluminado.
 
-RF3: Se locomover em direção ao alvo detectado contanto que o terreno seja regular e não existam obstáculos em seu caminho.
+RF3: Se locomover em direção ao alvo designado contanto que o terreno seja regular e não existam obstáculos em seu caminho.
 
 RF4: Sinalizar que chegou perto ou atingiu o alvo/objetivo.
 
@@ -98,7 +99,7 @@ RF4: Sinalizar que chegou perto ou atingiu o alvo/objetivo.
 % 1.4.2 ----------- requisitos não-funcionais
 \subsection{Requisitos não-funcionais}
 
-RNF1: O controle do equilíbrio será feito utilizando dados captados por sensores como acelerômetro e giroscópio.
+RNF1: O controle do equilíbrio será feito utilizando dados captados por sensores como acelerômetro, giroscópio e magnetómetro.
 
 RNF2: O alvo deve ser detectado utilizando processamento de imagem.
 
@@ -133,7 +134,7 @@ Nesta seção, descrevemos os materiais e custos esperados, além da abordagem m
       \href{https://produto.mercadolivre.com.br/MLB-2004934384-lip0-3s-111-v-1500-mah-3s-_JM?matt_tool=68334988&matt_word=&matt_source=google&matt_campaign_id=14300471977&matt_ad_group_id=127503848075&matt_match_type=&matt_network=g&matt_device=c&matt_creative=542969655996&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=542516090&matt_product_id=MLB2004934384&matt_product_partition_id=1801247246545&matt_target_id=pla-1801247246545}{Power Banck 1000mAh} & 84,90 & 1 & 84,90 \\
 
       \hline 
-      \href{https://www.aliexpress.com/item/32223093678.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=21099436311&aff_fcid=c234ac5e17824f20a319f9cc17dbaf2f-1692194363304-03902-_mPjn7Ro&tt=MG&aff_fsk=_mPjn7Ro&aff_platform=default&sk=_mPjn7Ro&aff_trace_key=c234ac5e17824f20a319f9cc17dbaf2f-1692194363304-03902-_mPjn7Ro&shareId=21099436311&businessType=ProductDetail&platform=AE&terminal_id=676ed690bcd2403d8bbab55c9f2e36b3&afSmartRedirect=y}{Drive Motor TB6612FNG} & 2,61 & 2 &	5,22 \\
+      \href{https://www.aliexpress.com/item/32223093678.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=21099436311&aff_fcid=c234ac5e17824f20a319f9cc17dbaf2f-1692194363304-03902-_mPjn7Ro&tt=MG&aff_fsk=_mPjn7Ro&aff_platform=default&sk=_mPjn7Ro&aff_trace_key=c234ac5e17824f20a319f9cc17dbaf2f-1692194363304-03902-_mPjn7Ro&shareId=21099436311&businessType=ProductDetail&platform=AE&terminal_id=676ed690bcd2403d8bbab55c9f2e36b3&afSmartRedirect=y}{Drive Motor DRV8833} & 2,61 & 2 &	5,22 \\
    
       \hline 
       \href{https://shopee.com.br/product/534679327/14372089266}{(*) Micro Servo MG90S}	& 13,00 & 1 & 13,00 \\
